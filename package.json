@@ -1,0 +1,41 @@
+{
+  "name": "opexrate",
+  "version": "1.0.2",
+  "description": "Access Open Exchange Rates API.",
+  "main": "dist/main.js",
+  "module": "dist/main.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.js"
+    }
+  },
+  "scripts": {
+    "test_cjs": "node test/opexrate.test.cjs",
+    "test_mjs": "node test/opexrate.test.mjs",
+    "build": "npx tsup source/main.ts --format esm,cjs --dts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "api",
+    "rest",
+    "forex",
+    "open",
+    "exchange",
+    "rates",
+    "oer",
+    "openexchangerates"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}
