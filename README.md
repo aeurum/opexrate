@@ -1,4 +1,4 @@
-# opexrate
+# Opexrate
 Opexrate can help you access [Open Exchange Rate](https://openexchangerates.org/) [API](https://docs.openexchangerates.org/).
 
 ## Installation
@@ -8,10 +8,10 @@ npm i opexrate
 
 ## Usage
 ```
-const OpExRate = require('opexrate')
-// import OpExRate from 'opexrate'
+const Opexrate = require('opexrate')
+// import Opexrate from 'opexrate'
 
-const opexrate = new OpExRate('your_app_id')
+const opexrate = new Opexrate('your_app_id')
 ```
 
 ### Methods
